@@ -14,5 +14,10 @@ for price in prices:
 total_price_average = round(total_price / len(prices), 2)
 print(total_price, total_price_average)
 
+# new price list that reduces the old prices by $ 5
+new_price_list = []
+for price in prices:
+    new_price_list.append(price - 5)
+print(new_price_list)
 
 
