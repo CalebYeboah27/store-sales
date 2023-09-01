@@ -21,11 +21,10 @@ for price in prices:
 print(new_price_list)
 
 
-
 # initialize the accumulator variable
 daily_revenue = []
 total_revenue = 0
-# Check if the two lists are 
+# Check if the two lists are
 # equal in number of elements
 if (len(prices) == len(last_week)):
     # use the range function to create a single loop
@@ -44,7 +43,10 @@ else:
 average_daily_revenue = round(total_revenue / len(daily_revenue))
 print(average_daily_revenue)
 
-
-
-
-
+# products are less than $ 30 based on new price
+products_less_than_30 = []
+for i in range(len(new_price_list)):
+    if new_price_list[i] < 30:
+        products_and_newprice = {products[i]:  new_price_list[i]}
+        products_less_than_30.append(products_and_newprice)
+print(products_less_than_30)
