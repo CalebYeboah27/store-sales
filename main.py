@@ -20,30 +20,7 @@ for price in prices:
     new_price_list.append(price - 5)
 print(new_price_list)
 
-# total revenue generated from the products
-# total_revenue = 0
 
-# results = []
-# for price in prices:
-#     pass
-# for num_items_sold in last_week:
-#     print(price)
-#     # total_revenue += num_items_sold * price
-#     print(num_items_sold)
-#     pass
-
-
-# print(total_revenue)
-    # results.append(product)
-# print(results)
-
-# zip is an iterable in python that combines
-# multiple iteables elements wise - without creating a nested loop
-# result = [a * b for a, b in zip(prices, last_week)]
-# print(result)
-# for a, b in zip(prices, last_week):
-#     product = a * b
-#     results.append(product)
 
 # initialize the accumulator variable
 daily_revenue = []
