@@ -15,10 +15,10 @@ total_price_average = round(total_price / len(prices), 2)
 print(total_price_average)
 
 # new price list that reduces the old prices by $ 5
-new_price_list = []
+new_prices = []
 for price in prices:
-    new_price_list.append(price - 5)
-print(new_price_list)
+    new_prices.append(price - 5)
+print(new_prices)
 
 
 # initialize the accumulator variable
@@ -45,8 +45,8 @@ print(average_daily_revenue)
 
 # products are less than $ 30 based on new price
 products_less_than_30 = []
-for i in range(len(new_price_list)):
-    if new_price_list[i] < 30:
-        products_and_newprice = {products[i]:  new_price_list[i]}
+for i in range(len(new_prices)):
+    if new_prices[i] < 30:
+        products_and_newprice = {products[i]:  new_prices[i]}
         products_less_than_30.append(products_and_newprice)
 print(products_less_than_30)
