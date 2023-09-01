@@ -40,6 +40,9 @@ if (len(prices) == len(last_week)):
 else:
     print("Lists have different lenght cannot perform the operation")
 
+# average daily revenue generated from the products
+average_daily_revenue = round(total_revenue / len(daily_revenue))
+print(average_daily_revenue)
 
 
 
